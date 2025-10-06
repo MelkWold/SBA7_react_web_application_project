@@ -1,0 +1,16 @@
+.navBarUl {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 20px;
+   padding: 20px;
+   width: 100%;
+}
+
+.navBarUl li{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    
+}

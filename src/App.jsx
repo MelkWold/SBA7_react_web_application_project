@@ -1,20 +1,25 @@
 import { useState } from 'react'
 import './App.css';
-import { Router, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import NavBar from './components/NavBar'
+import Home from './pages/Home';
+import Vegan from './pages/Vegan';
+import Vegetarian from './pages/Vegetarian';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Router>
+      <NavBar/>
+      <Routes>
         <Route path='/' element ={<Home/>}/>
-        <Route path='/' element ={<Vegan/>}/>
-        <Route path='/' element ={<Vegetarian/>}/>
-        <Route path='/' element ={<Smoothies/>}/>
-      </Router>
+        <Route path='/vegan' element ={<Vegan/>}/>
+        <Route path='/vegetarian' element ={<Vegetarian/>}/>
+      </Routes>
     </>
   )
 }
