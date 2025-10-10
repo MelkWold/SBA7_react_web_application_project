@@ -1,5 +1,12 @@
+import './pages.css'
+
 export default function Home(){
     
-    return <h1 style = {{ color: "black" }}>Welcome Home</h1>;
+    return (
+        <div>
+            <h1>Welcome to delighful menu!</h1>;
+            <p className = "websiteDescription">This website is designed to give you the opportunity to choose healthy and delicious cuisines from all over the world. The website is mainly geared towards introducing you to various vegetarian, vegan and unique miscellaneous cuisines. </p>
+        </div>
     
+    )
 }
