@@ -4,11 +4,10 @@ import axios from "axios";
 import RecipeCard from "../components/RecipeCard";
 import './pages.css'
 
-
-export default function Vegetarian() {
+export default function Miscellaneous() {
   const [recipes, setRecipes] = useState(null);
 
-  let category = "Vegetarian";
+  let category = "Miscellaneous";
 
   // Get the data
   useEffect(() => {
@@ -18,9 +17,9 @@ export default function Vegetarian() {
           `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
         );
 
-        const vegetarianRecipe = response.data.meals;
+        const miscellaneousRecipe = response.data.meals;
 
-        setRecipes(vegetarianRecipe);
+        setRecipes(miscellaneousRecipe);
       } catch (error) {
         console.error(error.message);
       }
@@ -31,7 +30,7 @@ export default function Vegetarian() {
   return (
     <>
       <div >
-        <h1>Vegetarian Recipes</h1>
+        <h1>Miscellaneous Recipes</h1>
         <div className = "container">
             <RecipeCard recipes = {recipes} />
         </div>

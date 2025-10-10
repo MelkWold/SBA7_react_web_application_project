@@ -1,0 +1,14 @@
+.recipeCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-evenly;
+}
+
+.recipeCard {
+    border: 1px solid red;
+    padding: 50px;
+    margin:20px;
+    background-color: black;
+    max-width: 300px;
+}

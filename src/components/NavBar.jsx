@@ -1,20 +1,26 @@
-import { Link } from 'react-router-dom';
-import './NavBar.css'
-
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 export default function NavBar() {
+  return (
+    <nav>
+      <ul className="navBarUl">
+        <li>
+          <Link to={"/"}>Home</Link>
+        </li>
 
+        <li>
+          <Link to={"/vegan"}>Vegan</Link>
+        </li>
 
-    return (
-        <nav width = {'100%'}>
-            <ul className ="navBarUl">
-                <Link to={'/'}><li>Home</li></Link>
+        <li>
+          <Link to={"/vegetarian"}>Vegetarian</Link>
+        </li>
 
-                <Link to={'/vegan'}><li>Vegan</li></Link>
-
-                <Link to={'/vegetarian'}><li>Vegetarian</li></Link>
-
-            </ul>
-        </nav>
-    )
+        <li>
+          <Link to={"/miscellaneous"}>Miscellaneous</Link>
+        </li>
+      </ul>
+    </nav>
+  );
 }
