@@ -1,12 +1,12 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
 import Vegan from "./pages/Vegan";
 import Vegetarian from "./pages/Vegetarian"
 import Miscellaneous from "./pages/Miscellaneous";
-import MasterImporter from "./components/MasterImporter";
-import Title from './components/Title';
+import MasterImporter from "./components/MasterImporter/MasterImporter";
+import Title from './components/Title/Title';
 
 function App() {
   return (

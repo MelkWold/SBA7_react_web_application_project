@@ -2,5 +2,5 @@ import './Title.css';
 
 export default function Title(){
 
-    return <h1 className = "title">Recipe Global</h1>
+    return <h1 className = "title"> Global Recipes</h1>
 }

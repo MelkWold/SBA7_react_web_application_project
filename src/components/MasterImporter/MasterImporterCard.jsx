@@ -1,16 +1,15 @@
 import './MasterImporterCard.css';
 
-export default function MasterImporterCard({ allRecipe }) {
+export default function MasterImporterCard({ recipes }) {
     
-    if(!allRecipe) {
-        return <p> Loading recipes ...</p>
-    }
+    if(!recipes) return <p> Loading recipes ...</p>
+    if(recipes.length === 0) return <p>No recipes found. </p>
     
 
     return (
         <div className = "allRecipeCardContainer">
-                { allRecipe.map((food) => (
-                <div key ={allRecipe.idMeal} className = "allRecipeCard">
+                { recipes.map((food) => (
+                <div key ={food.idMeal} className = "allRecipeCard">
                     <h2>{food.strMeal} </h2>
                     <li >{food.strCategory} ({food.strArea})</li><br/>
                     <img src= {food.strMealThumb} width= "500px" alt ={food.strMeal}/>

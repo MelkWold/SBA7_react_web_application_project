@@ -10,7 +10,7 @@ export default function NavBar() {
         </li>
 
         <li>
-          <Link to={"/allfood"}>All food</Link>
+          <Link to={"/allfood"}>Get Recipes</Link>
         </li>
 
         <li>
