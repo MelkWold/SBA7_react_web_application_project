@@ -12,7 +12,7 @@ export default function MasterImporterCard({ recipes }) {
                 <div key ={food.idMeal} className = "allRecipeCard">
                     <h2>{food.strMeal} </h2>
                     <li >{food.strCategory} ({food.strArea})</li><br/>
-                    <img src= {food.strMealThumb} width= "500px" alt ={food.strMeal}/>
+                    <img src= {food.strMealThumb} className="recipe-image" alt ={food.strMeal}/>
                     <h2> Cooking Instructions </h2>
                     <p className= "instructions">{food.strInstructions} </p><br/>
 

@@ -2,20 +2,39 @@
    display: flex;
    justify-content: space-around;
    align-items: center;
-   margin: 20px;
+   margin: 0;
    padding: 20px;
    width: 100%;
+   flex-wrap: wrap;
+   gap:10px;
 }
 
 .navBarUl li{
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: black;
+    color: white;
     
+}
+
+@media (min-width: 768px){
+    .navBarUl li {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .navBarUl li {
+        font-size: 2rem;
+    }
 }
 
 nav{
     background-color: black;
     width: 100%;
+}
+
+.navBarUl li a{
+    color:white;
+    text-decoration: none;
 }
