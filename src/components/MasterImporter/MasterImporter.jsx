@@ -44,7 +44,7 @@ export default function Masterimporter() {
     return(
         <>
             <div >
-                <p className = "foodInputInstruction">Enter either <span style ={{color: "cyan"}}>food name </span> or <span style ={{color: "cyan"}}>the first letter of the food name</span> to find detailed recipes and descriptions. </p>
+                <p className = "foodInputInstruction">Enter either <span style ={{color: "blue"}}>food name </span> or <span style ={{color: "blue"}}>the first letter of the food name</span> to find detailed recipes and descriptions. </p>
                 
                 <input
                     className = "foodInput"

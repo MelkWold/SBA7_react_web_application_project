@@ -11,6 +11,7 @@
     margin:20px;
     background-color: black;
     max-width: 1200px;
+    color:white;
 }
 
 .allReceipeTitle {
@@ -35,4 +36,7 @@
 
 .exampleFoodList{
     font-size: 25px
+}
+p{
+    color:black;
 }
