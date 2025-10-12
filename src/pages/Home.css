@@ -1,0 +1,12 @@
+.homeContainer{
+    max-width:1200px;
+
+}
+
+.websiteDescription {
+    font-size: 2.5rem;
+    max-width: 1200px;
+    padding:20px;
+    border-radius: 15px;
+   
+}
