@@ -44,14 +44,14 @@ export default function Masterimporter() {
     return(
         <>
             <div >
-                <p className = "foodInputInstruction">Enter a food name to find recipes and details. </p>
+                <p className = "foodInputInstruction">Enter either <span style ={{color: "cyan"}}>food name </span> or <span style ={{color: "cyan"}}>the first letter of the food name</span> to find detailed recipes and descriptions. </p>
                 
                 <input
                     className = "foodInput"
-                    placeholder= "enter a food name to find recipe"
+                    placeholder= "Enter a food name or first letter of food name"
                     onChange= {handleChange}>
                 </input>
-                <p className ='exampleFoodList'>E.g. Apple Frangipan Tart, Bakewell tart, Chicken Enchilada Casserole, Dal Fry, Eton Mess </p>
+                <p className ='exampleFoodList'>E.g. "Chicken Enchilada Casserole" or "C" without the quotes. </p>
 
                 <div className = "container">
                     <MasterImporterCard recipes = {recipes} />
