@@ -2,9 +2,12 @@
 
 ## Project Description and Features
 
-The project focuses on collating international food and beverage recipes for health-conscious people that prepare and consume mainly vegan or Miscellaneous diet. The data is obtained from the "The Meal DB" (https://www.themealdb.com/api.php) and accessed using the following API:
+The project focuses on collating international food recipes for health-conscious people that prepare and consume healthy diet at home. The data is obtained from the "The Meal DB" (https://www.themealdb.com/api.php) and accessed using the following APIs:
 
-API:
+- All meals: https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}
+- Vegetarian: https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}
+- Vegan: https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}
+- Miscellaneous: https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}
 
 ## Required dependencies that need to be installed
 
@@ -16,26 +19,15 @@ API:
 1. JavaScript
 2. React
 3. Axios
-4. Express.js
-5. Node.js
-6. CSS
-7. HTML
+4. CSS
+5. HTML
 
-## API Endpoints (?)
+## React Hooks used:
+- useState
+- useEffect
+- react-router-dom
+
 
 ## Reflection
 
 - Not required in the project document
-
-## SBA 320 Requirements:
-
-- Create REACT application that serves a purpose/solves a problem
-- Fetch Data from a 3rd API
-- Display data on the DOM
-- Technologies needed:
-- - useState OR useReducer - manage state
-- - useEffect - to automatically fetch data/handle effects
-- - react-router-dom - simulate 3 pages
-- - Well documented - README.md
-- - Thorough commit history. 12 - 15 commits
-- - Reasonable CSS
